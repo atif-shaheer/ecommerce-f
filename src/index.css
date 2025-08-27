@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles */
+@layer base {
+  :root {
+    --brand: 17 24 39; /* gray-900 */
+    --brand-2: 79 70 229; /* indigo-600 */
+  }
+  html, body, #root { height: 100%; }
+  body { @apply bg-neutral-50 text-neutral-900 antialiased; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-2xl px-4 py-2 font-medium shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+  }
+}
